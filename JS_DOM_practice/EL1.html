@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+    <style>
+        body {
+            background-color: rgb(96, 109, 104);
+            color: white;
+        }
+
+        #main-heading {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .boxes {
+            border: solid white 2px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem;
+
+            height: 200px;
+        }
+
+        button {
+            margin: auto;
+            padding: 0.5rem;
+            border-radius: 10px;
+            border: solid white 2px;
+            cursor: pointer;
+        }
+
+
+
+        .container2 {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .boxes1 {
+            border: solid white 2px;
+            padding: 2rem;
+            margin: 0.5rem;
+
+        }
+
+        .reveal-btn {
+            border: 1px solid white;
+            padding: 0.2rem;
+            color: green;
+
+        }
+
+        .hidden-content {
+            display: none;
+        }
+
+        .hidden-content.reveal-btn {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-heading">Event Listeners</h1>
+
+    <div class="container">
+
+        <div class="boxes box-1">
+            <h1 id="heading">Exampe 1</h1>
+            <button onclick="alert('I love JS')" class="btn-1">Enter</button>
+        </div>
+
+        <div class="boxes box-2">
+            <h1 id="heading">Exampe 2</h1>
+            <button class="btn-2">Enter</button>
+        </div>
+
+        <div class="boxes box-3">
+            <h1 id="heading">Exampe 3</h1>
+            <button class="btn-3">Enter</button>
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <button class="reveal-btn boxes1">Reveal more</button>
+        <div class="hidden-content boxes1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam voluptatum libero tempora qui nemo vitae
+            cum maiores, suscipit nesciunt. Repellat ut natus blanditiis iusto hic alias velit sequi, itaque officia
+            excepturi quaerat voluptate fugiat reiciendis accusantium ratione inventore vero eligendi? Consequuntur
+            dolorum officiis nemo culpa officia ipsam harum rerum, a velit repudiandae et earum laudantium, tempora,
+            dolorem voluptatibus fugit! Placeat.
+
+        </div>
+    </div>
+
+    <script src="EL1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+
+    <style>
+        body {
+            background-color: rgb(71, 78, 84);
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .div2 {
+            width: 200px;
+            border: solid 2px white;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 2rem;
+        }
+
+        .div1 {
+            width: 100px;
+            border: solid 2px white;
+            padding: 1.2rem;
+            margin: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button {
+            color: white;
+            border: 2px white solid;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 0.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div2">
+        2
+        <div class="div1">
+            1
+            <a href="" class="button">click</a>
+
+        </div>
+    </div>
+    <script src="EL2.html"></script>
+</body>
+
+</html>
