@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Orbitron:wght@600&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(todo.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#add-task-container {
+    width: 400px;
+    padding: 25px 15px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 4px;
+    display: flex;
+}
+
+input {
+    flex: 5;
+    margin-right: 12px;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    padding: 8px;
+    font-family: inherit;
+
+}
+
+#add-task {
+    flex: 1;
+    transition: 0.4s;
+    font-size: 1.3rem;
+    padding: 8px;
+    background-color: white;
+    color: green;
+    border: solid green 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#add-task:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Classes from JS */
+
+.task {
+    width: 400px;
+    padding: 15px;
+    margin-top: 1rem;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 4px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+
+}
+
+li {
+    width: 300px;
+    margin: 0 0.5rem;
+}
+
+.checkTask {
+    flex: 1;
+    transition: 0.4s;
+    font-size: 1.3rem;
+    padding: 8px;
+    margin-right: 0.5rem;
+    background-color: white;
+    color: orange;
+    border: solid orange 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.deleteTask {
+    flex: 1;
+    transition: 0.4s;
+    font-size: 1.3rem;
+    padding: 8px;
+    background-color: white;
+    color: red;
+    border: solid red 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.checkTask:hover {
+    background-color: orange;
+    color: white;
+}
+
+.deleteTask:hover {
+    background-color: red;
+    color: white;
+}
+
+#clear-btn {
+    flex: 1;
+    transition: 0.4s;
+    font-size: 1.3rem;
+    padding: 8px;
+    margin-top: 2rem;
+    background-color: white;
+    color: blue;
+    border: solid blue 2px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+#clear-btn:hover {
+    background-color: blue;
+    color: white;
+}
